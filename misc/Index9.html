@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Table test</title>
+        <link rel="Icon" type="image/x-icon" a href="img/GokuJr.01.png">
+        <style>
+            body {
+               background-color: orange;
+            }
+            table {
+              font-family: 'Times New Roman', Times, serif;
+              border: 1px solid black;
+                border-collapse: collapse;
+                width: 100%;
+            }     
+            td {
+              border: 1px solid black; 
+              color: purple;
+               text-align: center;
+               padding: 8px;
+            }   
+            th {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                border: 1px solid black;
+                color:blueviolet;
+                text-align: center;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+            background-color:white;        
+            }
+            caption {
+                font-size: 25px;
+                text-align: center;
+                color: blueviolet;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            </style>
+      <body>
+
+        <table>
+            <colgroup>
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+            <caption>DBZ TABLE</caption>
+            <tr>
+<th style="color: aquamarine;">Name</th>
+<th style="color: aquamarine;">Arc</th>
+<th>Power Level</th>
+<th>My Ranking</th>
+ </tr>
+ <tr>
+    <td style="color: aquamarine;">Frieza</td>
+    <td style="color: aquamarine;">Namek Saga</td>
+    <td>120,000,000</td>
+    <td>9.5/10</td>
+ </tr>
+ <tr>
+    <td style="color: aquamarine;">Cell</td>
+    <td style="color: aquamarine;">Android/Cell Saga</td>
+    <td>900,000,000</td>
+    <td>10/10</td>
+ </tr>
+ <tr>
+    <td style="color: aquamarine;">Buu</td>
+    <td style="color: aquamarine;">Buu Saga</td>
+    <td>1,150,000,000</td>
+    <td>8/10</td>
+ </tr>
+ <tr>
+    <td style="color: aquamarine;">Beerus</td>
+ <td style="color: aquamarine;">Battle of Gods</td>
+ <td>Unkown</td>
+ <td>7/10</td>
+ </tr>
+        </table>
+        <table>
+            <colgroup>
+            <col span="2" style="background-color: blue;"> </colgroup>
+            <caption>ANOTHER DBZ TABLE</caption>
+            <tr>
+                <th colspan="2" style="color: aquamarine;">Name</th>
+                <th>My Ranking</th>
+            </tr>
+            <tr>
+                <td style="color: aquamarine;">Trunks</td>
+                <td style="color: aquamarine;">Gohan</td>
+                <td>10/10</td>
+            </tr>
+            <tr>
+                <td style="color: aquamarine;">Goku</td>
+                <td style="color: aquamarine;">Vegeta</td>
+                <td>8/10</td>
+            </tr>
+        </table>
+        <table>
+            <colgroup>
+            <col span="2" style="background-color: blue;"> 
+        </colgroup>
+            <caption>Caption</caption>
+            <tr>
+                <th style="color: aquamarine;">Heading</th>
+            <td style="color: aquamarine;">Option 1</td>
+            </tr>
+            <tr>
+               <th rowspan="2" style="color: aquamarine;">Heading 2</th>
+               <td style="color: aquamarine;">Option 2</td>
+               <td>Option 3</td>
+            </tr>
+        </table>
+      </body>
+</html>

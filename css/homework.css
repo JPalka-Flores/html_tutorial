@@ -1,0 +1,66 @@
+.header {
+    text-align: center;
+    font-size: 100px;
+    background-color: black;
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+    overflow: auto;
+}
+
+ol {
+   
+}
+
+li {
+list-style-position: inside;
+margin-left: 30%;
+}
+
+li, h2 {
+    color: white;
+    padding: 0%;
+}
+
+div {
+    width: 33%;
+    margin-bottom: 100px;
+    float: left;
+    border: solid black;
+}
+
+div ul, ol {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #088F8F;
+}
+
+h2 { 
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.ordered-list {
+    list-style: upper-roman;
+    text-align: left;
+}
+
+.unordered-list {
+    list-style-type: circle;
+    text-align: left;
+}
+
+.ordered-list2 {
+    list-style: upper-roman;
+    text-align: left;
+}

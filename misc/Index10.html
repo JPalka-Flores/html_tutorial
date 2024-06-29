@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>List test</title>
+    <style>
+      dd {
+        color: gold;
+      }
+      li {
+        color: blue;
+      }
+      h2 {
+        color: blueviolet;
+      }
+      div.mycontainer {
+        overflow: auto;
+      }
+      .AquaBox {
+        float: left;
+        /* color:"blue"*/
+      }
+      .PurpleBox {
+        float: right;
+      }
+      div {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>List 1</h2>
+    <ol type="i">
+      <li>Goku</li>
+      <li>Naruto</li>
+      <li>Luffy</li>
+      <li>Ichigo</li>
+    </ol>
+    <h2>List 2</h2>
+    <ul style="list-style-type: circle">
+      <li>Goku</li>
+      <li>Naruto</li>
+      <li>Luffy</li>
+      <li>Ichigo</li>
+    </ul>
+    <h2>Detailed list</h2>
+    <dl>
+      <ol type="A">
+        <li>Goku</li>
+        <dd>-Protagonist of Dragon ball</dd>
+        <li>Naruto</li>
+        <dd>-Protagonist of Naruto</dd>
+        <li>Luffy</li>
+        <dd>-Protagonist of One Piece</dd>
+        <li>Ichigo</li>
+        <dd>-Protagonist of Bleach</dd>
+      </ol>
+    </dl>
+    <ol type="I">
+      <li>
+        Goku
+        <ol type="I">
+          <li>Goku</li>
+          <li>Goku Black</li>
+        </ol>
+      </li>
+      <li>
+        Trunks
+        <ol type="I">
+          <li>Z Trunks</li>
+          <li>Super Trunks</li>
+        </ol>
+      </li>
+    </ol>
+    <h1>Container</h1>
+    <div class="mycontainer" style="border: 5px dotted red;">
+      <div class="AquaBox" style="background-color: aqua; border: 0px solid yellow; width: 50%;">
+        <h1>Text</h1>
+        <h2>Some more text</h2>
+        <p>Dragon Ball Z</p>
+      </div>
+     
+        <div class="PurpleBox" style="background-color: blueviolet; border: 0px solid yellow; width: 50%;">
+          <h1>Even More Text</h1>
+          <h2 style="background-color: pink;">Naruto</h2>
+          <p>Bleach</p>
+        </div>
+      
+    </div>
+    <p><b>Goku</b></p>
+    <p><i>Naruto</i></p>
+    <p><del>Ichigo</del></p>
+    <p><strong>Yuji</strong></p>
+    <p><mark>Luffy</mark></p>
+    <p><small>Denji</small></p>
+    <p><abbr title="Google Webpage">Google</abbr></p>
+  </body>
+</html>
