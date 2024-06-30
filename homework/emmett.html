@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .command {
+      color: blue;
+    }
+
+    .resultTitle {
+      color: black;
+      font-weight: bold;
+    }
+
+    .result {
+      color: green;
+    }
+  </style>
+</head>
+<br>
+  <h1>Emmet</h1>
+  <!-- SIMPLE TAG -->
+  <section class="simple_tags">
+    <h3>To create simple tags.</h3>
+    <p class="command">p {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result">&lt;p&gt;&lt;/p&gt;</span>
+    </code><br />
+    <p class="command">div {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result">&lt;div&gt;&lt;/div&gt;</span>
+    </code>
+  </section>
+  <!-- CLASSES -->
+  <section class="classes">
+    <h3>To create element with class</h3>
+    <p class="command">p.classname {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result">&lt;p class="classname"&gt;&lt;/p&gt;</span>
+    </code><br />
+  </section>
+  <!-- ID -->
+  <section class="ID">
+    <h3>To create element with ID</h3>
+    <p class="command">p#idName {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result">&lt;p id="idName"&gt;&lt;/p&gt;</span>
+    </code><br />
+  </section>
+  <!-- ID & Class -->
+  <section class="ID_Class">
+    <h3>To create element with ID & Class</h3>
+    <p class="command">p#idName.classname {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result">&lt;p id="idName" class="classname"&gt;&lt;/p&gt;</span>
+    </code><br />
+  </section>
+  <!-- ATTRIBUTES -->
+  <section class="attributes">
+    <h3>To create element with attribute</h3>
+    <p class="command">p[src="cat.jpg"] {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result">&lt;p src="cat.jpg"&gt;&lt;/p&gt;</span>
+    </code><br />
+  </section>
+  <!-- Content -->
+  <section class="content">
+    <h3>To create element with content text</h3>
+    <p class="command">p{This is a paragraph} {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result">&lt;p&gtThis is a paragraph.&lt;/p&gt;</span>
+    </code><br />
+  </section>
+  <!-- SIBLINGS -->
+  <section class="siblings">
+    <h3>To create sibling elements</h3>
+    <p class="command">div+div+div {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result">&lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;</span>
+    </code><br />
+  </section>
+  <!-- CHILD ELEMENTS -->
+  <section class="children">
+    <h3>To create children elements</h3>
+    <p class="command">div>div>div {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;<br /></span>
+    <code>
+      <span class="result">
+        &lt;div&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br /><br />
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+          &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+        &lt;/div&gt;
+    </code><br />
+  </section>
+  <!-- CLIMBING UP -->
+  <section class="climbing">
+    <h3>To create elements with climbing elements</h3>
+    <p class="command">div+div>p>span+em^bq {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result"><br/>
+        &lt;div&gt;&lt;/div&gt;<br/>
+        &lt;div&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;p&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt; &lt;/span&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;em&gt; &lt;/em&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;blockquote&gt; &lt;/blockquote&gt;<br/>
+        &lt;/div&gt;<br/>
+      </span>
+    </code><br />
+  </section>
+  <!-- GROUPING -->
+  <section class="grouping">
+    <h3>Grouping elements</h3>
+    <p class="command">div>(header>ul>li>a)+footer>p {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result"><br/>
+        &lt;div&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;header&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;/header&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;footer&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; &lt;/p&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;/footer&gt;<br/>
+        &lt;/div&gt;<br/>
+      </span>
+    </code><br />
+  </section>
+  <!-- Multiple Elements -->
+  <section class="grouping">
+    <h3>Adding multiple elements using Multiplication</h3>
+    <p class="command">ul>li*5 {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result"><br/>
+        &lt;ul&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+      </span>
+    </code><br />
+  </section>
+  <!-- Multiple Elements in sequence -->
+  <section class="grouping">
+    <h3>Adding multiple elements in sequence</h3>
+    <p class="command">ul>li{Item: $}*5 {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result"><br/>
+        &lt;ul&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 1&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 2&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 3&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 4&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 5&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+      </span>
+    </code><br />
+    <p><strong><i>You can do the same for Id's or Classes</i></strong></p>
+    <p class="command">ul>li#item${Item: $}*5 {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result"><br/>
+        &lt;ul&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item1"&gt;Item: 1&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item2"&gt;Item: 2&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item3"&gt;Item: 3&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item4"&gt;Item: 4&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item5"&gt;Item: 5&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+      </span>
+    </code><br />
+    <p><strong><i>You can do the same in REVERSE!</i></strong></p>
+    <p class="command">ul>li#item$@-1{Item: $@-1}*5 {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result"><br/>
+        &lt;ul&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item5"&gt;Item: 5&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item4"&gt;Item: 4&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item3"&gt;Item: 3&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item2"&gt;Item: 2&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item1"&gt;Item: 1&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+      </span>
+    </code><br />
+  </section>
+  <!-- Multiple Elements in sequence Starting at multiple X -->
+  <section class="grouping">
+    <h3>Adding multiple elements in sequence Starting at multiple X</h3>
+    <p class="command">ul>li{Item: $@6}*5 {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result"><br/>
+        &lt;ul&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 6&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 7&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 8&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 9&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Item: 10&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+      </span>
+    </code><br /><br />
+    <p><strong><i>You can do the same for Id's or Classes</i></strong></p>
+    <p class="command">ul>li#item$@6{Item: $@6}*5 {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result"><br/>
+        &lt;ul&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item6"&gt;Item: 6&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item7"&gt;Item: 7&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item8"&gt;Item: 8&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item9"&gt;Item: 9&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li id="item10"&gt;Item: 10&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+      </span>
+    </code><br />
+  </section>
+  <!-- LOREM IPSUM TEXT -->
+  <section class="attributes">
+    <h3>To create element with lorem ipsum text (10 words)</h3>
+    <p class="command">p>lorem10 {ENTER}</p>
+    <span class="resultTitle">Result:&nbsp;</span>
+    <code>
+      <span class="result">&lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, quis?&lt;/p&gt;</span>
+    </code><br />
+  </section>
+</body>
+</html>
