@@ -1,57 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework</title>
-<style>
-    body {
-        background-color: seagreen;
-    }
-    h3 {
-        background-color: lightgray;
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-    .command {
-      color: white;
-      font-weight: bold;
-      font-family: serif;
-      font-size: 35px;
-      background-color: gray;
-      margin-top: 0%;
-    }
+    <style>
+          body {
+            background-color: #0492c2
+          }
 
-    .result-title {
-      color: white;
-      font-weight: bold;
-      font-size: 35px;
-    }
+          h3 {
+            background-color: black;
+            color: white;
+            margin-top: 0%;
+            margin-bottom: 0%;
+          }
 
-    .result {
-      color: green;
-    }
-    .simple-tags{
-        background-color: rgb(27, 27, 203);        
-    }
-    div {
-        border: 5px solid black;
-        width: 15%;
-        text-align: center;
-        padding-bottom: 200px;
-    }
-    href {
+          .command {
+            color: black;
+            font-weight: bold;
+            font-family: serif;
+            font-size: 35px;
+            background-color:white;
+            margin: 0%;
+          }
 
-    }
-  </style>
-</head>
-<body>
+          .result-title {
+            color: white;
+            font-weight: bold;
+            font-size: 35px;
+          }
+          .simple-tags {
+            background-color: blue;
+            height: 225px;
+          }
+
+          .classes {
+            background-color: green;
+            height: 225px;
+            margin-left: 20px;
+            margin-right: 50px;
+          }
+
+          .id {
+            background-color: rgb(225, 225, 16);
+            height: 225px;
+          }
+          .class_id {
+            background-color: orange;
+          }
+          .attributes {
+            background-color: red;
+          }
+
+          .content {
+            background-color: indigo;
+          }
+          .siblings {
+      background-color: blue;
+      margin-bottom: 0;
+          }
+          .children {
+            background-color: green;
+          }
+          .climbing {
+            background-color: rgb(225, 225, 16);
+          }
+          .grouping{
+            background-color: orange;
+          }
+          .grouping2 {
+      background-color: red;
+          }
+          .grouping3 {
+            background-color: indigo;
+          }
+          .grouping4 {
+            background-color: blue;
+          }
+          .attributes2 {
+      background-color:green;
+          }
+
+          div {
+            border: 5px solid black;
+            text-align: center;
+            padding-bottom: 100px;
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 100px;
+          }
+          h1 {
+            background-color: black;
+            color: white;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 0;
+          }
+          section {
+            padding-top: 10px;
+            padding-bottom: 20px;
+          }
+          .group-1 {
+            
+            overflow: hidden;
+            height: 325px;
+            margin-bottom: 50px;
+            padding-left: 400px;
+          }
+          .group-2 {
+          
+            height: 250px;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            margin-bottom: 50px;
+          }
+          .group-3 {
+            
+            overflow: hidden;
+            padding-left: 150px;
+           margin-bottom: 50px;
+            
+          }
+          .group-4 {
+            
+            overflow: auto;
+            padding-left: 100px;
+            margin-bottom: 50px;
+          }
+          .alone {
+           
+            overflow: auto;
+            padding-left: 700px;
+          }
+    </style>
+  </head>
+
+  <body>
     <h1>Emmet</h1>
-    <div class="simple-tags">
-<h3>To create simple tags.</h3>
-<p class="command">"p{text}"</p>
-<span class="result-title">Result:</p>
-<img src="/img/Screenshot 2024-07-02 234703.png"> 
-</div>
-</body>
+    <section class="group-1">
+      <div class="simple-tags">
+        <h3>To create simple tags.</h3>
+        <p class="command">p{ENTER}</p>
+        <span class="result-title">Result:</span>
+        <br />
+        <img class="result" src="/img/Paragraph_Emmet.png" />
+        <p class="command">div{ENTER}</p>
+        <span class="result-title">Result:</span>
+        <br />
+        <img class="result" src="/img/div_emmet.png" />
+      </div>
+      <div class="classes">
+        <h3>To create element with class</h3>
+        <p class="command">p.classname{ENTER}</p>
+        <span class="result-title">Result:</span>
+        <br />
+        <img class="result" src="/img/class_emmet.png" />
+      </div>
+      <div class="id">
+        <h3>To create element with id</h3>
+        <p class="command">p#idName {ENTER}</p>
+        <span class="result-title">Result:</span>
+        <br />
+      </div>
+    </section>
+    <section class="group-2">
+    <div class="class_id">
+      <h3>To create an element with ID & CLASSES</h3>
+      <p class="command">p#idName.classname {ENTER}</p>
+      <span class="result-title">Result:</span>
+    </div>
+    <div class="attributes">
+      <h3>To create element with attribute</h3>
+      <p class="command">p[src="cat.jpg"{ENTER}</p>
+      <span class="result-title">Result:</span>
+      <br />
+    </div>
+    <div class="content">
+      <h3>To create element with content text</h3>
+      <p class="command">p{this is a paragraph} {ENTER}</p>
+      <span class="result-title">Result:</span>
+      <br />
+    </div>
+    <div class="siblings">
+      <h3>To create sibling elements</h3>
+      <p class="command">div+div+div {ENTER}</p>
+      <span class="result-title">Result:</span>
+    </div>
+  </section>
+  <section class="group-3">
+    <div class="children">
+      <h3>To create children elements</h3>
+      <p class="command">div>div>div {ENTER}</p>
+      <span class="result-title">Result:</span>
+    </div>
+    <div class="climbing">
+      <h3>To create elements with climbing elements</h3>
+      <p class="command">div+div>p>span+em^bq {ENTER}</p>
+      <span class="result-title">Result:</span>
+    </div>
+    <div class="grouping">
+      <h3>Grouping elements</h3>
+      <p class="command">div>(header>ul>li>a)+footer>p {ENTER}</p>
+      <span class="result-title">result:</span>
+    </div>
+  </section>
+  <section class="group-4">
+    <div class="grouping2">
+      <h3>Adding multiple elements using multiplication</h3>
+      <p class="command">ul>li*5 {ENTER}</p>
+      <span class="result-title"></span>
+    </div>
+    <div class="grouping3">
+      <h3>Adding multiple elements in sequence</h3>
+      <p class="command">ul>li{Item: $}*5 {ENTER}</p>
+      <span class="result-title">Result:</span>
+      <h3>You can do the same for Id's or Classes</h3>
+      <p class="command">ul>li#item${Item: $}*5 {ENTER}</p>
+      <span class="result-title">Result:</span>
+      <h3>You can do the same in REVERSE!</h3>
+      <p class="command">ul>li#item$@-1{Item: $@-1}*5 {ENTER}</p>
+      <span class="result-title">Result:</span>
+    </div>
+    <div class="grouping4">
+      <h3>Adding multiple elements in sequence Starting at multiple X</h3>
+      <p class="command">ul>li{Item: $@6}*5 {ENTER}</p>
+      <span class="result-title">Result:</span>
+      <h3>You can do the same for Id's or Classes</h3>
+      <p class="command">ul>li#item$@6{Item: $@6}*5 {ENTER}</p>
+      <span class="result-title">Result:</span>
+    </div>
+  </section>
+  <section class="alone">
+    <div class="attributes2">
+      <h3>To create element with lorem ipsum text (10 words)</h3>
+      <p class="command">p>lorem10 {ENTER}</p>
+      <span class="result-title">result:</span>
+    </div>
+  </section>
+  </body>
 </html>

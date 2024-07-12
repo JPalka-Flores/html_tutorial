@@ -6,6 +6,9 @@
   <title>Document</title>
 
   <style>
+    body {
+      background-color: green;
+    }
     .command {
       color: blue;
     }
@@ -13,10 +16,14 @@
     .resultTitle {
       color: black;
       font-weight: bold;
+      padding-left: 5px;
     }
 
     .result {
-      background-color: lightgray;
+      background-color: yellow;
+     color: white;
+     font-size: 35px;
+     font-weight: bold;
     }
   </style>
 </head>
@@ -26,14 +33,14 @@
   <section class="simple_tags">
     <h3>To create simple tags.</h3>
     <p class="command">p {ENTER}</p>
-    <span class="resultTitle">Result:&nbsp;</span>
+    <p class="resultTitle">Result:&nbsp;</p>
     <code>
       <span class="result">&lt;p&gt;&lt;/p&gt;</span>
     </code><br />
     <p class="command">div {ENTER}</p>
     <span class="resultTitle">Result:&nbsp;</span>
     <code>
-      <img src="img/emmet_div_result.png" alt="div result">
+      <span class="result">&lt;div&gt;&lt;/div&gt;</span>
     </code>
   </section>
   <!-- CLASSES -->
