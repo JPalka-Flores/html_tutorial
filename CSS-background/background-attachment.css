@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+    background-image: url(/img/V.jpg);
+    background-position: bottom;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    color: aliceblue;
+    font-size: 30px;
+}
