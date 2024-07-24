@@ -1,0 +1,16 @@
+body{
+    background-color: blueviolet;
+}
+h1 {
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    background-color: antiquewhite
+}
+p {
+background-color: aqua;
+font-weight: bold;
+}
