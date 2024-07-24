@@ -1,0 +1,15 @@
+p {
+    border: black;
+}
+.nero {
+border: 2px dotted;
+}
+.vergil {
+    border: 5px dashed;
+}
+.Dante {
+    border: 10px groove;
+}
+.v {
+    border: 20px solid;
+}

@@ -1,0 +1,20 @@
+p {
+    border: 5px solid black;
+    padding: 5px;
+}.insanity {
+border-radius: 4px;
+}
+.insanity2 {
+    border-radius: 8px;
+}
+.insanity3 {
+    border-radius: 12px;
+}
+.insanity4 {
+    border-radius: 16px;
+}.insanity5 {
+    border-radius: 20px;
+}
+.insanity6 {
+    border-radius: 24px;
+}

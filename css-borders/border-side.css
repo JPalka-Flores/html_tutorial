@@ -1,0 +1,12 @@
+h1 {
+   border-width: 5px;
+   border-color: pink purple crimson violet;
+   border-style: hidden ridge none double;
+}
+
+p {
+    border:5px;
+    border-color: blue green red yellow;
+    border-style: solid dotted dashed groove;
+}
+
