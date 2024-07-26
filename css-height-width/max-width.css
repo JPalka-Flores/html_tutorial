@@ -1,0 +1,9 @@
+div {
+    max-width: 2000px;
+    height: 100px;
+    background-color: blue;
+    border: 5px solid aqua;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+}
