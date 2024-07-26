@@ -1,0 +1,11 @@
+p {
+    margin: 30px;
+    border: 1px solid black;
+    outline: 5px solid skyblue;
+    outline-offset: 15px;
+}
+.blue {
+    font-weight: bolder;
+    background-color: skyblue;
+}
+  
