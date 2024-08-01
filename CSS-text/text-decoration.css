@@ -1,0 +1,16 @@
+.overline {
+    text-decoration: overline;
+    text-decoration-color: blue;
+}
+.line-through {
+    text-decoration: line-through;
+    text-decoration-color:black ;
+}
+.underline {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+.sandwich {
+    text-decoration: overline underline;
+    text-decoration-color: red;
+}

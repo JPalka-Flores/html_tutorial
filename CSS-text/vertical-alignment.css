@@ -1,0 +1,17 @@
+.base {
+ vertical-align: baseline;
+}
+.top {
+vertical-align: text-top;
+background-color: blue;
+color: red;
+}
+.bottom {
+    vertical-align: text-bottom;
+}
+.sub {
+    vertical-align: sub;
+}
+.super {
+    vertical-align: super;
+}

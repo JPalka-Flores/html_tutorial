@@ -1,0 +1,15 @@
+.hulk {
+    text-transform: uppercase;
+    font-size: large;
+    color: green;
+}
+.ant-man {
+    text-transform: lowercase;
+    font-size: small;
+    color: red;
+}
+.captain-america {
+    text-transform: capitalize;
+    font-size: medium;
+    color: blue;
+}

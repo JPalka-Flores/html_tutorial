@@ -1,0 +1,17 @@
+.auto {
+    text-decoration-line: underline;
+    text-decoration-thickness: auto;
+}
+.px {
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+}
+.percent {
+    text-decoration-line: underline;
+    text-decoration-thickness: 25%; 
+}
+.true-power {
+    text-decoration-line: underline;
+    text-decoration-thickness: 100%;  
+    font-weight: 900;
+}
